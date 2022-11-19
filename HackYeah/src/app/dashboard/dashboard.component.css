@@ -1,21 +1,23 @@
-/* mat-grid-list {
-  margin: 0;
-  padding: 0;
+table {
+  width: 90%;
+  margin-left: 1vw;
+  background: #e08946;
+  border-radius: 1vw;
 }
-mat-grid-tile-content {
-  margin: 0;
-  padding: 0;
-} */
+.example-large-box {
+  margin-top: 1vw;
+}
 .mat-card-title {
   font-size: 1.5vw;
 }
-.user-card {
+.user-card,
+.user-stats {
   background: #e08946;
   padding: 1vw;
   margin-left: 1vw;
   border-radius: 1vw;
-  width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 800px;
 }
 .mat-card {
   padding-left: 2vw;
@@ -33,7 +35,9 @@ mat-grid-tile-content {
 mat-button {
   font-size: 1vw;
 }
-
+h2 {
+  color: black;
+}
 /* mat-grid-tile-content {
 }
 .dashboard {

@@ -6,3 +6,6 @@ h2 {
 mat-toolbar {
   background-color: #6e3100;
 }
+.title {
+  margin-right: 85vw;
+}

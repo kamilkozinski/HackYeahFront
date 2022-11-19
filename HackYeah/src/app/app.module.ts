@@ -21,6 +21,8 @@ import { HeaderComponent } from './header/header.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatTableModule } from '@angular/material/table';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -49,6 +51,8 @@ export function tokenGetter() {
     MatIconModule,
     MatRippleModule,
     MatGridListModule,
+    MatTabsModule,
+    MatTableModule,
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,

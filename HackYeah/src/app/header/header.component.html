@@ -7,7 +7,12 @@
     <mat-icon>menu</mat-icon>
   </button>
   <span class="example-spacer"></span>
-
-  <h2 routerLink="/welcome" (click)="goBackToMain()">Mr Bin</h2>
-  <button mat-raised-button color="warn" (click)="logout()">Logout</button>
+  <span class="title"
+    ><h2 routerLink="/welcome" (click)="goBackToMain()">Mr Bin</h2></span
+  >
+  <span class="go-back"
+    ><button mat-raised-button color="warn" (click)="logout()">
+      Logout
+    </button></span
+  >
 </mat-toolbar>
