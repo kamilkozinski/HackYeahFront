@@ -16,6 +16,17 @@
                          placeholder="Ex. pat@example.com">
                 </mat-form-field>
                 <mat-form-field class="full-width" appearance="fill">
+                  <mat-label>Gmina</mat-label>
+                  <mat-select formControlName="gmnia">
+                    <mat-option *ngFor="let gmniaValue of gminy" [value]="gmniaValue">{{gmniaValue}}</mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-form-field class="full-width" appearance="fill">
+                  <mat-label>Adres</mat-label>
+                  <input type="text" matInput formControlName="address"
+                         placeholder="Kraków Aleja Jana Pawła 23">
+                </mat-form-field>
+                <mat-form-field class="full-width" appearance="fill">
                   <mat-label>Password</mat-label>
                   <input type="password" matInput formControlName="password"
                          placeholder="*******">

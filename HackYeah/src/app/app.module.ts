@@ -12,7 +12,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthInterceptor } from './services/auth.interceptor';
@@ -27,6 +27,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { BlogComponent } from './blog/blog.component';
 import { PrizeCatalogComponent } from './prize-catalog/prize-catalog.component';
+import { MatSelectModule } from '@angular/material/select';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -44,6 +45,7 @@ export function tokenGetter() {
     PrizeCatalogComponent,
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -61,6 +63,7 @@ export function tokenGetter() {
     MatTabsModule,
     MatTableModule,
     MatMenuModule,
+    MatSelectModule,
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,
