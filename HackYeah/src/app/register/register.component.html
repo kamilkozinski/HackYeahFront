@@ -1,0 +1,30 @@
+<div class="register">
+    <mat-card class="register-card">
+        <mat-card-header class="flex-center register-header">
+            <mat-card-title>Register your account</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="register-form" [formGroup]="registerForm">
+                <mat-form-field class="full-width" appearance="fill">
+                  <mat-label>Username</mat-label>
+                  <input type="text" matInput formControlName="username"
+                         placeholder="Ex. pat">
+                </mat-form-field>
+                <mat-form-field class="full-width" appearance="fill">
+                  <mat-label>Email</mat-label>
+                  <input type="email" matInput formControlName="email"
+                         placeholder="Ex. pat@example.com">
+                </mat-form-field>
+                <mat-form-field class="full-width" appearance="fill">
+                  <mat-label>Password</mat-label>
+                  <input type="password" matInput formControlName="password"
+                         placeholder="*******">
+                </mat-form-field>
+              </form>
+        </mat-card-content>
+        <mat-card-actions class="flex-center">
+           <button routerLink="/login" mat-raised-button color="primary">Go to login</button>
+           <button (click)="signUp()" mat-raised-button color="accent">Sign up</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
