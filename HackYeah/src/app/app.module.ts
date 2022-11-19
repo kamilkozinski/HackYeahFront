@@ -18,6 +18,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthInterceptor } from './services/auth.interceptor';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HeaderComponent } from './header/header.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatRippleModule } from '@angular/material/core';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -43,6 +46,9 @@ export function tokenGetter() {
     MatFormFieldModule,
     MatToolbarModule,
     MatSnackBarModule,
+    MatIconModule,
+    MatRippleModule,
+    MatGridListModule,
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,

@@ -1,4 +1,31 @@
 <app-header
   ><mat-card>{{ testRequest$ | async }}</mat-card></app-header
 >
-<button mat-raised-button color="warn" (click)="logout()">Logout</button>
+
+<mat-grid-list cols="3">
+  <mat-grid-tile class="user-info" colspan="1" rowspan="1">
+    <mat-card class="user-card">
+      <mat-card-header>
+        <mat-card-title>John Kowalski</mat-card-title>
+      </mat-card-header>
+      <div class="image-user">
+        <img
+          mat-card-xl-image
+          src="../../assets/images/avatar_placeholder.webp"
+          alt="Avatar PlaceHolder"
+        />
+      </div>
+      <mat-card-content>
+        <p><b>Street name:</b> os. Tysiaclecia</p>
+
+        <p><b>City:</b> Krakow</p>
+        <p><b>Gmina:</b> Wieliczka</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>Edit</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1" rowspan="1"> </mat-grid-tile>
+  <mat-grid-tile colspan="1" rowspan="1"> </mat-grid-tile>
+</mat-grid-list>

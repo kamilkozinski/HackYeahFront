@@ -1,9 +1,8 @@
-.navbar-default {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: #21c42e;
-  background-color: red;
-}
 h2 {
-  font-size: 6vw;
+  font-size: 2.5vw;
   padding-left: 1vw;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+mat-toolbar {
+  background-color: #6e3100;
 }

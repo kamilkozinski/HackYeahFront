@@ -1,7 +1,13 @@
-<div class="navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <h2 routerLink="/welcome" (click)="goBackToMain()">Mr Bin</h2>
-    </div>
-  </div>
-</div>
+<mat-toolbar>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="example-spacer"></span>
+
+  <h2 routerLink="/welcome" (click)="goBackToMain()">Mr Bin</h2>
+  <button mat-raised-button color="warn" (click)="logout()">Logout</button>
+</mat-toolbar>
