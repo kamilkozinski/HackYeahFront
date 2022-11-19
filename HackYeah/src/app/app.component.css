@@ -1,0 +1,16 @@
+.main-content {
+  background-color: #000000de;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+::ng-deep snack-bar-container.danger {
+  background-color: #f44336;
+  color: #fff;
+}
+
+::ng-deep snack-bar-container.success {
+  background-color: #69f0ae;
+  color: #000000de;
+}
