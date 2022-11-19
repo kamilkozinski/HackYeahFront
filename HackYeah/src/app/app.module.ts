@@ -23,6 +23,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTableModule } from '@angular/material/table';
+import { MatMenuModule } from '@angular/material/menu';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -53,6 +54,7 @@ export function tokenGetter() {
     MatGridListModule,
     MatTabsModule,
     MatTableModule,
+    MatMenuModule,
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,

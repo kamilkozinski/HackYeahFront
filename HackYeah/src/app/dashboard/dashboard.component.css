@@ -38,6 +38,9 @@ mat-button {
 h2 {
   color: black;
 }
+.accuracy-color {
+  background-color: lightgreen;
+}
 /* mat-grid-tile-content {
 }
 .dashboard {

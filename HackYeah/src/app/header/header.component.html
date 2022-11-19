@@ -1,11 +1,17 @@
 <mat-toolbar>
   <button
+    [matMenuTriggerFor]="menu"
     mat-icon-button
     class="example-icon"
     aria-label="Example icon-button with menu icon"
   >
     <mat-icon>menu</mat-icon>
   </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Dashboard</button>
+    <button mat-menu-item>Leaderboard</button>
+    <button mat-menu-item>Blog</button>
+  </mat-menu>
   <span class="example-spacer"></span>
   <span class="title"
     ><h2 routerLink="/welcome" (click)="goBackToMain()">Mr Bin</h2></span

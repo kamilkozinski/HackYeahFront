@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { AuthService } from '../services/auth.service';
-import { TestService } from '../services/test.service';
+import { Activity } from '../interfaces/activity';
+import { UserStatsService } from '../services/user-stats.service';
 
 export interface PeriodicElement {
   name: string;
@@ -22,15 +23,20 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./dashboard.component.css'],
 })
 export class DashboardComponent implements OnInit {
-  testRequest$: Observable<any> = this.testService.sendTestRequest();
   displayedColumns: string[] = ['position', 'name', 'count', 'date'];
   dataSource = ELEMENT_DATA;
+  activityList: Activity[] = [];
   constructor(
     private authService: AuthService,
-    private testService: TestService
+    private userStatsService: UserStatsService
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.userStatsService.getAllActivity(1).subscribe((x) => {
+      this.activityList.push(...x);
+    });
+    console.log(this.activityList);
+  }
 
   logout() {
     this.authService.logout();

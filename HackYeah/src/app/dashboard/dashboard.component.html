@@ -1,12 +1,10 @@
-<app-header
-  ><mat-card>{{ testRequest$ | async }}</mat-card></app-header
->
+<app-header></app-header>
 <mat-tab-group animationDuration="0ms">
   <mat-tab label="User Info">
     <div class="example-large-box mat-elevation-z4">
       <mat-card class="user-card">
         <mat-card-header>
-          <mat-card-title>John Kowalski</mat-card-title>
+          <mat-card-title>Hello, Janusz Kowalski</mat-card-title>
         </mat-card-header>
         <div class="image-user">
           <img
@@ -17,7 +15,6 @@
         </div>
         <mat-card-content>
           <p><b>Street name:</b> os. Tysiaclecia</p>
-
           <p><b>City:</b> Krakow</p>
           <p><b>Gmina:</b> Wieliczka</p>
         </mat-card-content>
@@ -66,7 +63,7 @@
   <mat-tab label="User stats">
     <div class="example-large-box mat-elevation-z4">
       <div class="user-stats">
-        <h2>Recycling accuracy: 80%</h2>
+        <h2>Monthly average: <span class="accuracy-color">80%</span></h2>
         <h2>Points gathered: 1261</h2>
         <h2>Your trash-rank: Mega-recycler</h2>
         <h2>Your position in voivodeship rank: 12 650/2 125 213</h2>
