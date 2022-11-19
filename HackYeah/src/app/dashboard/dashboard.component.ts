@@ -29,12 +29,17 @@ export class DashboardComponent implements OnInit {
   constructor(
     private authService: AuthService,
     private userStatsService: UserStatsService
-  ) {}
+  ) {
+    this.userStatsService.getAllActivity(1).subscribe((x) => {
+      x.forEach((y) => {
+        if (y) {
+          this.activityList.push(y);
+        }
+      });
+    });
+  }
 
   ngOnInit(): void {
-    this.userStatsService.getAllActivity(1).subscribe((x) => {
-      this.activityList.push(...x);
-    });
     console.log(this.activityList);
   }
 

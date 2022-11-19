@@ -1,4 +1,6 @@
 <app-header></app-header>
+<ng-template *ngIf="activityList">TEST</ng-template>
+
 <mat-tab-group animationDuration="0ms">
   <mat-tab label="User Info">
     <div class="example-large-box mat-elevation-z4">
@@ -67,35 +69,9 @@
         <h2>Points gathered: 1261</h2>
         <h2>Your trash-rank: Mega-recycler</h2>
         <h2>Your position in voivodeship rank: 12 650/2 125 213</h2>
+        <h2>Last registered composting activities:</h2>
       </div>
     </div>
   </mat-tab>
 </mat-tab-group>
-
-<!-- <mat-grid-list cols="1">
-  <mat-grid-tile class="user-info" colspan="1" rowspan="1">
-    <mat-card class="user-card">
-      <mat-card-header>
-        <mat-card-title>John Kowalski</mat-card-title>
-      </mat-card-header>
-      <div class="image-user">
-        <img
-          mat-card-xl-image
-          src="../../assets/images/avatar_placeholder.webp"
-          alt="Avatar PlaceHolder"
-        />
-      </div>
-      <mat-card-content>
-        <p><b>Street name:</b> os. Tysiaclecia</p>
-
-        <p><b>City:</b> Krakow</p>
-        <p><b>Gmina:</b> Wieliczka</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>Edit</button>
-      </mat-card-actions>
-    </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile colspan="1" rowspan="1"> </mat-grid-tile>
-  <mat-grid-tile colspan="1" rowspan="1"> </mat-grid-tile>
-</mat-grid-list> -->
+<ng-template *ngFor="let activity of activityList">TEST</ng-template>

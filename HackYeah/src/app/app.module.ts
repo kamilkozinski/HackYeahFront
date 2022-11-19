@@ -24,6 +24,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTableModule } from '@angular/material/table';
 import { MatMenuModule } from '@angular/material/menu';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+import { BlogComponent } from './blog/blog.component';
+import { PrizeCatalogComponent } from './prize-catalog/prize-catalog.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -36,6 +39,9 @@ export function tokenGetter() {
     RegisterComponent,
     DashboardComponent,
     HeaderComponent,
+    LeaderboardComponent,
+    BlogComponent,
+    PrizeCatalogComponent,
   ],
   imports: [
     BrowserModule,
