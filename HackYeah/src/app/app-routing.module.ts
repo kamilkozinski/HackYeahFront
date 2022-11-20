@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 import { BlogComponent } from './blog/blog.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
@@ -10,15 +11,37 @@ import { NotLoggedInGuard } from './services/not-logged-in.guard';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent, canActivate: [NotLoggedInGuard] },
-  { path: 'register', component: RegisterComponent, canActivate: [NotLoggedInGuard] },
-  { path: 'dashboard', component: DashboardComponent, canActivate: [LoggedInGuard] },
+  {
+    path: 'register',
+    component: RegisterComponent,
+    canActivate: [NotLoggedInGuard],
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    canActivate: [LoggedInGuard],
+  },
   { path: 'blog', component: BlogComponent, canActivate: [LoggedInGuard] },
-  { path: 'catalog', component: PrizeCatalogComponent, canActivate: [LoggedInGuard] },
-  { path: '', redirectTo: '/login', pathMatch: 'full' }
+  {
+    path: 'catalog',
+    component: PrizeCatalogComponent,
+    canActivate: [LoggedInGuard],
+  },
+  {
+    path: 'catalog',
+    component: PrizeCatalogComponent,
+    canActivate: [LoggedInGuard],
+  },
+  {
+    path: 'admin',
+    component: AdminPanelComponent,
+    canActivate: [LoggedInGuard],
+  },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -31,6 +31,7 @@ import { TotalPointsComponent } from './dashboard/total-points/total-points.comp
 import { MonthlyAverageGaugeComponent } from './dashboard/monthly-average-gauge/monthly-average-gauge.component';
 import { ActivityComponent } from './dashboard/activity/activity.component';
 import { LeaderboardComponent } from './dashboard/leaderboard/leaderboard.component';
+import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -49,6 +50,7 @@ export function tokenGetter() {
     TotalPointsComponent,
     MonthlyAverageGaugeComponent,
     ActivityComponent,
+    AdminPanelComponent,
   ],
   imports: [
     FormsModule,

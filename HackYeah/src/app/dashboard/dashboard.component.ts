@@ -12,56 +12,54 @@ export interface PeriodicElement {
   date: string;
 }
 
-
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css'],
 })
 export class DashboardComponent implements OnInit {
-
   leaderboardMock: LeaderboardItem[] = [
     {
-      "username": "john",
-      "score": 1243,
-      "rank": "destroyer"
+      username: 'john1998',
+      score: 12000,
+      rank: ' DE_COMPOSTER',
     },
     {
-      "username": "gokul",
-      "score": 44444,
-      "rank": "destroyer"
+      username: 'Gokul1410',
+      score: 11000,
+      rank: 'DE_COMPOSTER',
     },
     {
-      "username": "kamil",
-      "score": 1999,
-      "rank": "destroyer"
+      username: 'kamil_k',
+      score: 18000,
+      rank: 'TRASH_GOD',
     },
     {
-      "username": "john",
-      "score": 1673,
-      "rank": "destroyer"
+      username: 'Joanna2137',
+      score: 16500,
+      rank: 'BIG_BIN',
     },
     {
-      "username": "john",
-      "score": 1243,
-      "rank": "destroyer"
+      username: 'joDDhn69',
+      score: 1243,
+      rank: 'destroyer',
     },
     {
-      "username": "gokul",
-      "score": 44444,
-      "rank": "destroyer"
+      username: 'nikocado_avocado',
+      score: 44218,
+      rank: 'MR_BIN',
     },
     {
-      "username": "kamil",
-      "score": 1999,
-      "rank": "destroyer"
+      username: 'santa_claus',
+      score: 8000,
+      rank: 'ROOKIE_TRASHMAN',
     },
     {
-      "username": "john",
-      "score": 1673,
-      "rank": "destroyer"
-    }
-  ]
+      username: 'Morg',
+      score: 4000,
+      rank: 'NOO_BIN',
+    },
+  ];
 
   displayedColumns: string[] = ['position', 'name', 'count', 'date'];
   activityList: Activity[] = [];
@@ -69,8 +67,8 @@ export class DashboardComponent implements OnInit {
     private authService: AuthService,
     private userStatsService: UserStatsService
   ) {
-    this.userStatsService.getAllActivity(1).subscribe((x) => {
-      this.activityList = x;
+    this.userStatsService.getAllActivity(8).subscribe((x) => {
+      this.activityList = [...x];
     });
   }
 
