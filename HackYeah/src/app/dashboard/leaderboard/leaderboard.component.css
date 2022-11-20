@@ -1,0 +1,13 @@
+.table{
+    width: 100%;
+}
+.card{
+    height: 330px;
+    margin-top:1%;
+    margin-bottom:30%;
+    margin-inline: 0.7%;
+    overflow-y: scroll;
+}
+.container{
+    overflow: hidden;
+}

@@ -1,0 +1,18 @@
+
+.header{
+    justify-content: center;
+}
+
+.card{
+    height: 830px;
+    margin-top:4%;
+    margin-bottom:30%;
+    margin-inline: 1%;
+    overflow-y:scroll;
+}
+
+
+.table{
+    width: 100%;
+}
+

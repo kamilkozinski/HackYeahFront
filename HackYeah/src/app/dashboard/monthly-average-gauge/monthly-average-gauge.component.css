@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    justify-content: center;
+}
+.mat-card-content{
+    height: 80%;
+}
+.card{
+    height: 90%;
+    margin-block: 4%;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+
+.counter {
+    font-size: 85px;
+
+    transition: color 0.7s ease;
+    transition: font-size 0.7s ease;
+
+}
+
+.ten {
+    color: red;
+    font-size: 90px;
+
+}
+.twenty {
+    color: rgb(226, 148, 2);
+    font-size: 100px;
+
+}
+.fifty {
+    color: rgb(148, 226, 2);
+    font-size: 110px;
+
+}
+.seventy {
+    color: rgb(84, 226, 2);
+    font-size: 120px;
+
+}
+.ninety {
+    color: rgb(0, 255, 13);
+    font-size: 130px;
+
+}

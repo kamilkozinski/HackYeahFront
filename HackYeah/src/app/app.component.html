@@ -1,6 +1,8 @@
 <!-- <mat-toolbar color="primary" class="toolbar">
   <span>HackYeah</span>
 </mat-toolbar> -->
+<app-header *ngIf="loggedIn"></app-header>
+
 <div class="main-content">
   <router-outlet></router-outlet>
 </div>

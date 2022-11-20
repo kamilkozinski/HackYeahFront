@@ -1,0 +1,14 @@
+.canvas-container {
+    background-color: white;
+    height: 400px;
+    width: 800px;
+    margin-left: 50px;
+}
+.card{
+    height: 90%;
+    margin-block: 2%;
+    margin-inline: 1%;
+}
+.header{
+    justify-content: center;
+}

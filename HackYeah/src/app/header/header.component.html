@@ -8,10 +8,9 @@
     <mat-icon>menu</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item (click)="goToDashboard()">Dashboard</button>
-    <button mat-menu-item (click)="goToLeaderboard()">Leaderboard</button>
-    <button mat-menu-item (click)="goToBlog()">Blog</button>
-    <button mat-menu-item (click)="goToPrizeCatalog()">Prize Catalog</button>
+    <button mat-menu-item routerLink="dashboard">Dashboard</button>
+    <button mat-menu-item routerLink="blog">Blog</button>
+    <button mat-menu-item routerLink="catalog">Prize Catalog</button>
   </mat-menu>
   <span class="example-spacer"></span>
   <span class="title"

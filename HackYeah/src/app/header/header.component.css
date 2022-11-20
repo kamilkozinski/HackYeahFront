@@ -4,8 +4,12 @@ h2 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 mat-toolbar {
-  background-color: #6e3100;
+  background-color: #0d4b01;
+  color: white;
 }
 .title {
   margin-right: 85vw;
+}
+.go-back{
+  margin-left: -32px;
 }

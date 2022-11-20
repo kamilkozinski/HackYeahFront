@@ -61,8 +61,8 @@ export class AuthService {
 
   loggedIn() {
     const token = localStorage.getItem("token") as string;
-    console.log(this.helper.isTokenExpired(token));
-    return !this.helper.isTokenExpired(token);
+    console.log(this.helper?.isTokenExpired(token));
+    return !this.helper?.isTokenExpired(token);
   }
   logout() {
     localStorage.removeItem("token");

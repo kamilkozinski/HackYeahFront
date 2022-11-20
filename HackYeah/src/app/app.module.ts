@@ -24,10 +24,13 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTableModule } from '@angular/material/table';
 import { MatMenuModule } from '@angular/material/menu';
-import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { BlogComponent } from './blog/blog.component';
 import { PrizeCatalogComponent } from './prize-catalog/prize-catalog.component';
 import { MatSelectModule } from '@angular/material/select';
+import { TotalPointsComponent } from './dashboard/total-points/total-points.component';
+import { MonthlyAverageGaugeComponent } from './dashboard/monthly-average-gauge/monthly-average-gauge.component';
+import { ActivityComponent } from './dashboard/activity/activity.component';
+import { LeaderboardComponent } from './dashboard/leaderboard/leaderboard.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -43,6 +46,9 @@ export function tokenGetter() {
     LeaderboardComponent,
     BlogComponent,
     PrizeCatalogComponent,
+    TotalPointsComponent,
+    MonthlyAverageGaugeComponent,
+    ActivityComponent,
   ],
   imports: [
     FormsModule,

@@ -14,18 +14,6 @@ export class HeaderComponent implements OnInit {
   goBackToMain(): void {
     this.router.navigate(['']);
   }
-  goToLeaderboard(): void {
-    this.router.navigate(['leaderboard']);
-  }
-  goToDashboard(): void {
-    this.router.navigate(['dashboard']);
-  }
-  goToBlog(): void {
-    this.router.navigate(['blog']);
-  }
-  goToPrizeCatalog(): void {
-    this.router.navigate(['prizeCatalog']);
-  }
   logout() {
     this.authService.logout();
   }
